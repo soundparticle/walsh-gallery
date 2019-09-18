@@ -1,10 +1,12 @@
 <template>
-  <div class="hello">
+  <div class="header">
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
+
+
 export default {
   name: 'Header',
   props: {
@@ -18,6 +20,7 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -29,4 +32,5 @@ li {
 a {
   color: #42b983;
 }
+ 
 </style>
