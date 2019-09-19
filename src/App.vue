@@ -22,7 +22,7 @@ export default {
 <style>
 #app {
   background-image: url("./assets/logo.jpg");
-  background-size: contain;
+  background-size: center;
   background-repeat: no-repeat;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
