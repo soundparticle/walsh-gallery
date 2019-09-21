@@ -6,18 +6,21 @@
   </div>
 </template>
 
+
 <script>
 import Header from './components/Header.vue';
 import Form from './components/Form.vue';
+
 export default {
   name: 'app',
-  
   components: {
     Header,
     Form
   }
 };
+
 </script>
+
 
 <style>
 #app {
@@ -33,5 +36,4 @@ export default {
   margin-top: 60px;
   margin: 0 auto;
 }
-
 </style>
