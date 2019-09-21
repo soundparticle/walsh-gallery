@@ -24,8 +24,9 @@ export default {
 
 
 <style>
-#app {
+html {
   background: url("./assets/painting-turner_rain.jpg") no-repeat center center fixed;
+  background-color: rgb(249, 220, 126);
   background-size: cover;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
