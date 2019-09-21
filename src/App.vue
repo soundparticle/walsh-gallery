@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="form-container">
-      <Header msg="Welcome to The Pamela Walsh Gallery"/>
+      <Header msg="The Pamela Walsh Gallery"/>
       <Form question1='What is art?' question2='Why is art?'/>
     </div>
   </div>

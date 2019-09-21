@@ -7,8 +7,8 @@
           <input class="form__input" name="entry.668016936" />
         </div>
         <div class="form__question">
-        <label class="form__label">{{ question2 }}</label>
-        <input class="form__input" name="entry.1943360912" />
+          <label class="form__label">{{ question2 }}</label>
+          <input class="form__input" name="entry.1943360912" />
         </div>
         <button class="form__submit-button" type="submit">Submit</button>
       </div>
