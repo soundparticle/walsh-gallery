@@ -30,14 +30,13 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 1000px;
   width: 100%;
   text-align: center;
-  margin-top: 60px;
   margin: 0 auto;
-  justify-content: center;
-  display: flex;
-  align-items: center;
 
 }
 .form-container {
