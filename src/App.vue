@@ -25,9 +25,8 @@ export default {
 
 <style>
 #app {
-  background-image: url("./assets/logo.jpg");
-  background-size: center;
-  background-repeat: no-repeat;
+  background: url("./assets/painting-turner_rain.jpg") no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
