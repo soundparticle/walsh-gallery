@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <!-- <img id="header-image" alt="Vue logo" src="./assets/logo.jpg"> -->
-    <Header msg="Welcome to The Pamela Walsh Gallery"/>
-    <Form question1='What is art?' question2='Why is art?'/>
+    <div class="form-container">
+      <Header msg="Welcome to The Pamela Walsh Gallery"/>
+      <Form question1='What is art?' question2='Why is art?'/>
+    </div>
   </div>
 </template>
 
@@ -25,15 +26,27 @@ export default {
 <style>
 #app {
   background-image: url("./assets/logo.jpg");
-  background-size: contain;
+  background-size: center;
   background-repeat: no-repeat;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 1000px;
-  width: 1000px;
+  width: 100%;
   text-align: center;
   margin-top: 60px;
   margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: fit-content;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200px;
 }
 </style>
