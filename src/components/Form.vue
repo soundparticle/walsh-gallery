@@ -17,7 +17,6 @@
 </template>
 
 <script scoped>
-
 export default {
   name: 'Form',
   props: {
@@ -25,44 +24,49 @@ export default {
     question2: String,
   }
 };
-
 </script>
 
 <style>
-form {
-  display: flex;
-  justify-content: center;
-  font-family: 'Cinzel', serif;
-}
-.form__body {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  align-items: center;
-}
-.form__submit-button {
-  background-color: #000;
-  color: #FFF;
-  font-family: 'Cinzel', serif;
-  margin-top: 50px;
-  padding: 10px;
-  width: fit-content;
-  align-content: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-.form__input {
-  margin-top: 10px;
-  padding: 5px;
-  width: 300px;
-}
-.form__label {
-  font-weight: bold;
-  font-size: 20px;
-}
-.form__question {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-}
+  form {
+    /* display: flex; */
+    /* justify-content: center; */
+    font-family: 'Cinzel', serif;
+  }
+  .form__body {
+    display: flex;
+    flex-direction: column;
+    /* width: 500px; */
+    align-items: center;
+  }
+  .form__submit-button {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Cinzel', serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: fit-content;
+    align-content: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .form__input {
+    margin-top: 10px;
+    padding: 5px;
+    width: 300px;
+  }
+  .form__label {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .form__question {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 30px 0px 30px;
+  }
+
+  @media only screen and (min-width: 746px) {
+
+    
+  }
 </style>
