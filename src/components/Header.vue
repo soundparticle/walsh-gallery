@@ -18,6 +18,8 @@
 <style scoped>
   h1 {
     font-family: 'Cinzel', serif;
+    font-size: 24px;
+    padding: 10px;
   }
   ul {
     list-style-type: none;
@@ -29,5 +31,10 @@
   }
   a {
     color: #42b983;
+  }
+
+  @media only screen and (min-width: 746px) {
+
+
   }
 </style>

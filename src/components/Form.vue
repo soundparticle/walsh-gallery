@@ -17,26 +17,25 @@
 </template>
 
 <script scoped>
-  export default {
-    name: 'Form',
-    props: {
-      question1: String,
-      question2: String,
-    }
-  };
+export default {
+  name: 'Form',
+  props: {
+    question1: String,
+    question2: String,
+  }
+};
 </script>
 
 <style>
-
   form {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     font-family: 'Cinzel', serif;
   }
   .form__body {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    /* width: 500px; */
     align-items: center;
   }
   .form__submit-button {
@@ -44,6 +43,7 @@
     color: #FFF;
     font-family: 'Cinzel', serif;
     margin-top: 50px;
+    margin-bottom: 20px;
     padding: 10px;
     width: fit-content;
     align-content: center;
@@ -62,6 +62,11 @@
   .form__question {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin: 50px 30px 0px 30px;
+  }
+
+  @media only screen and (min-width: 746px) {
+
+    
   }
 </style>

@@ -7,7 +7,6 @@
   </div>
 </template>
 
-
 <script>
   import Header from './components/Header.vue';
   import Form from './components/Form.vue';
@@ -20,10 +19,9 @@
     }
   };
 
-</script>
+  </script>
 
-
-<style>
+  <style>
   html {
     background: url("./assets/painting-turner_rain.jpg") no-repeat center center fixed;
     background-color: rgb(249, 220, 126);
@@ -34,18 +32,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: 800px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
-  }
 
+  }
   .form-container {
     background-color: rgba(255, 255, 255, 0.8);
-    width: fit-content;
-    padding: 50px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: rgba(84, 34, 1, 0.954);
     display: flex;
     flex-direction: column;
+    width: fit-content;
     margin-bottom: 200px;
+  }
+
+  @media only screen and (min-width: 746px) {
+
+
   }
 </style>
