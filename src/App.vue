@@ -8,18 +8,18 @@
 </template>
 
 <script>
-  import Header from './components/Header.vue';
-  import Form from './components/Form.vue';
+import Header from './components/Header.vue';
+import Form from './components/Form.vue';
 
-  export default {
-    name: 'app',
-    components: {
-      Header,
-      Form
-    }
-  };
+export default {
+  name: 'app',
+  components: {
+    Header,
+    Form
+  }
+};
 
-  </script>
+</script>
 
   <style>
   html {
@@ -50,7 +50,6 @@
   }
 
   @media only screen and (min-width: 746px) {
-
 
   }
 </style>

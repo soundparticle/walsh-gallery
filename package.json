@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "eslint-plugin-html": "^6.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -30,7 +31,7 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},      
+    "rules": {},
     "parser": "vue-eslint-parser",
     "parserOptions": {
       "parser": "babel-eslint"
