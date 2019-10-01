@@ -10,32 +10,52 @@
           <label class="form__label">{{ question2 }}</label>
           <input class="form__input" name="entry.1943360912" />
         </div>
-        <button class="form__submit-button" type="submit">Submit</button>
+        <div class="form__question">
+          <label class="form__label">{{ question3 }}</label>
+          <input class="form__input" name="entry.1338771678" />
+        </div>
+        <button v-on:click="submit" class="form__submit-button">Submit</button>
       </div>
     </form>
   </div>
+
+
 </template>
 
 <script scoped>
 export default {
   name: 'Form',
   props: {
-    question1: String,
-    question2: String,
+    question1: {
+      type: String,
+      required: true,
+    },
+    question2: {
+      type: String,
+      required: true,
+    },
+    question3: {
+      type: String,
+      required: true,
+    }
+  },
+  methods: {
+    submit: function(event) {
+      // TO-DO: add an if statement here  that checks that all of questions are empty, the form won't submit.
+      alert('This is a required field');
+      event.preventDefault();
+    }
   }
 };
 </script>
 
 <style>
   form {
-    /* display: flex; */
-    /* justify-content: center; */
     font-family: 'Cinzel', serif;
   }
   .form__body {
     display: flex;
     flex-direction: column;
-    /* width: 500px; */
     align-items: center;
   }
   .form__submit-button {

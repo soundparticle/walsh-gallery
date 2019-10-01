@@ -2,7 +2,7 @@
   <div id="app">
     <div class="form-container">
       <Header msg="The Pamela Walsh Gallery"/>
-      <Form question1='What is art?' question2='Why is art?'/>
+      <Form question1='Name' question2='Address' question3='Email'/>
     </div>
   </div>
 </template>
