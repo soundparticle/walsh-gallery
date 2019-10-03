@@ -45,11 +45,16 @@ export default {
     border-color: rgba(84, 34, 1, 0.954);
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 85vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 300px;
     margin-bottom: 200px;
   }
 
   @media only screen and (min-width: 746px) {
-
+    .form-container {
+      width: 500px;
+    }
   }
 </style>

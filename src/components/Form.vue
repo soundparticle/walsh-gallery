@@ -85,7 +85,7 @@ export default {
   .form__input {
     margin-top: 10px;
     padding: 5px;
-    width: 300px;
+    width: 220px;
   }
   .form__label {
     font-weight: bold;
