@@ -37,7 +37,7 @@ export default {
   methods: {
     submit() {
       if(this.input.name === '' || this.input.address === '' || this.input.email === '') {
-        alert('This is a required field');
+        alert('You forgot something! Please fill out all fields.');
         event.preventDefault();
       }
       else return;
