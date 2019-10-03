@@ -1,30 +1,48 @@
 <template>
+<!-- possibly remove question props??? -->
   <div class="form">
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSfA1sgQSFHpCWcXK6NMw0wS_oLOGqQeCFw3TaKp4xcgvtuGvQ/formResponse" target="_self" method="POST">
       <div class="form__body">
         <div class="form__question">
           <label class="form__label">{{ question1 }}</label>
-          <input class="form__input" name="entry.668016936" />
+          <input class="form__input" name="entry.668016936" v-model="input.name" placeholder="Name" autocomplete="off"/>
         </div>
         <div class="form__question">
           <label class="form__label">{{ question2 }}</label>
-          <input class="form__input" name="entry.1943360912" />
+          <input class="form__input" name="entry.1943360912" v-model="input.address" placeholder="Address" autocomplete="off"/>
         </div>
         <div class="form__question">
           <label class="form__label">{{ question3 }}</label>
-          <input class="form__input" name="entry.1338771678" />
+          <input class="form__input" name="entry.1338771678" v-model="input.email" placeholder="Email" autocomplete="off"/>
         </div>
-        <button v-on:click="submit" class="form__submit-button">Submit</button>
+        <button v-on:click="submit()" class="form__submit-button">Submit</button>
       </div>
     </form>
   </div>
-
-
 </template>
+
 
 <script scoped>
 export default {
   name: 'Form',
+  data() {
+    return {
+      input: {
+        name: '',
+        address: '',
+        email: '',
+      }
+    };
+  },
+  methods: {
+    submit() {
+      if(this.input.name === '' || this.input.address === '' || this.input.email === '') {
+        alert('This is a required field');
+        event.preventDefault();
+      }
+      else return;
+    }
+  },
   props: {
     question1: {
       type: String,
@@ -39,15 +57,9 @@ export default {
       required: true,
     }
   },
-  methods: {
-    submit: function(event) {
-      // TO-DO: add an if statement here  that checks that all of questions are empty, the form won't submit.
-      alert('This is a required field');
-      event.preventDefault();
-    }
-  }
 };
 </script>
+
 
 <style>
   form {
