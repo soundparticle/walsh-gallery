@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>{{ title }}</h1>
+    <h1>The Pamela Walsh Gallery</h1>
   </div>
 </template>
 
@@ -34,7 +34,6 @@ export default {
   }
 
   @media only screen and (min-width: 746px) {
-
 
   }
 </style>

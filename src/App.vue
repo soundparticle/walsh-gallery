@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="form-container">
-      <Header title="The Pamela Walsh Gallery"/>
-      <Form question1='Name' question2='Address' question3='Email'/>
+      <Header />
+      <Form />
     </div>
   </div>
 </template>

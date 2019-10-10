@@ -4,15 +4,15 @@
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSfA1sgQSFHpCWcXK6NMw0wS_oLOGqQeCFw3TaKp4xcgvtuGvQ/formResponse" target="_self" method="POST">
       <div class="form__body">
         <div class="form__question">
-          <label class="form__label">{{ question1 }}</label>
+          <label class="form__label"></label>
           <input class="form__input" name="entry.668016936" v-model="input.name" placeholder="Name" autocomplete="off"/>
         </div>
         <div class="form__question">
-          <label class="form__label">{{ question2 }}</label>
+          <label class="form__label"></label>
           <input class="form__input" name="entry.1943360912" v-model="input.address" placeholder="Address" autocomplete="off"/>
         </div>
         <div class="form__question">
-          <label class="form__label">{{ question3 }}</label>
+          <label class="form__label"></label>
           <input class="form__input" name="entry.1338771678" v-model="input.email" placeholder="Email" autocomplete="off"/>
         </div>
         <button v-on:click="submit()" class="form__submit-button">Submit</button>
@@ -36,25 +36,13 @@ export default {
   },
   methods: {
     submit() {
+      // Maybe change conditional to be = , so it type matches???
+      // refactor to ternary.
       if(this.input.name === '' || this.input.address === '' || this.input.email === '') {
         alert('You forgot something! Please fill out all fields.');
         event.preventDefault();
       }
       else return;
-    }
-  },
-  props: {
-    question1: {
-      type: String,
-      required: true,
-    },
-    question2: {
-      type: String,
-      required: true,
-    },
-    question3: {
-      type: String,
-      required: true,
     }
   },
 };
