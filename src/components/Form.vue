@@ -57,6 +57,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5px;
   }
   .form__submit-button {
     background-color: #000;
@@ -82,7 +83,7 @@ export default {
   .form__question {
     display: flex;
     flex-direction: column;
-    margin: 50px 30px 0px 30px;
+    margin: 25px 30px 0px 30px;
   }
 
   @media only screen and (min-width: 746px) {

@@ -36,6 +36,7 @@ export default {
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    overflow: hidden;
 
   }
   .form-container {
@@ -43,12 +44,16 @@ export default {
     border-style: ridge;
     border-width: 5px;
     border-color: rgba(84, 34, 1, 0.954);
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 85vw;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 300px;
+    margin-top: 60px;
     margin-bottom: 200px;
   }
 

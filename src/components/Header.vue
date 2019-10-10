@@ -7,9 +7,6 @@
 <script>
 export default {
   name: 'Header',
-  props: {
-    title: String
-  },
 };
 </script>
 
@@ -19,7 +16,7 @@ export default {
   h1 {
     font-family: 'Cinzel', serif;
     font-size: 24px;
-    padding: 10px;
+    padding: 5px;
   }
   ul {
     list-style-type: none;
