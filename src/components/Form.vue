@@ -75,6 +75,7 @@ export default {
     margin-top: 10px;
     padding: 5px;
     width: 220px;
+    border-radius: 5px;
   }
   .form__label {
     font-weight: bold;
