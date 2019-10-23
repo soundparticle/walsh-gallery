@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     submit() {
-      // Maybe change conditional to be = , so it type matches???
       // refactor to ternary.
       if(this.input.name === '' || this.input.address === '' || this.input.email === '') {
         alert('You forgot something! Please fill out all fields.');
