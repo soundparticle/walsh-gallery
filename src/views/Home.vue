@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-    <router-view/>
+    <div class="form-container">
+      <Header />
+      <Form />
+    </div>
   </div>
 </template>
 
+<script>
+import Header from '../components/Header.vue';
+import Form from '../components/Form.vue';
+
+export default {
+  name: 'Home',
+  components: {
+    Header,
+    Form
+  }
+};
+
+</script>
+
   <style>
   html {
-    background: url("./assets/painting-turner_rain.jpg") no-repeat center center fixed;
+    background: url("../assets/painting-turner_rain.jpg") no-repeat center center fixed;
     background-color: rgb(249, 220, 126);
     background-size: cover;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
