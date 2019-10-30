@@ -1,5 +1,4 @@
 <template>
-<!-- possibly remove question props??? -->
   <div class="form">
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSfA1sgQSFHpCWcXK6NMw0wS_oLOGqQeCFw3TaKp4xcgvtuGvQ/formResponse" target="_self" method="POST">
       <div class="form__body">
@@ -35,12 +34,13 @@ export default {
     };
   },
   methods: {
+    // refactor to ternary.
     submit() {
-      // refactor to ternary.
       if(this.input.name === '' || this.input.address === '' || this.input.email === '') {
         alert('You forgot something! Please fill out all fields.');
         event.preventDefault();
       }
+      // else this.$router.push({ path: 'thank-you' });
       else return;
     }
   },

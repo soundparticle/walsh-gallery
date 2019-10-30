@@ -43,6 +43,7 @@ export default {
     background-color: rgba(255, 255, 255, 0.8);
     border-style: ridge;
     border-width: 5px;
+    border-radius: 10px;
     border-color: rgba(84, 34, 1, 0.954);
 
     display: flex;

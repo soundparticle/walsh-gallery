@@ -9,7 +9,7 @@
   </div>
 </template>
 
-  <style>
+<style>
   html {
     background: url("./assets/painting-turner_rain.jpg") no-repeat center center fixed;
     background-color: rgb(249, 220, 126);
