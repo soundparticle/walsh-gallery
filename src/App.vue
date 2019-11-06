@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+    <div id="nav">
+      <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/thank-you">Thanks</router-link> -->
+    </div>
     <router-view/>
   </div>
 </template>
 
-  <style>
+<style>
   html {
     background: url("./assets/painting-turner_rain.jpg") no-repeat center center fixed;
     background-color: rgb(249, 220, 126);

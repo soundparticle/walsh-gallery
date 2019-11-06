@@ -43,18 +43,19 @@ export default {
     background-color: rgba(255, 255, 255, 0.8);
     border-style: ridge;
     border-width: 5px;
+    border-radius: 10px;
     border-color: rgba(84, 34, 1, 0.954);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    /* padding-top: 200px; */
     width: 85vw;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 60px;
-    margin-bottom: 200px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* margin-top: 60px; */
+    /* margin-bottom: 200px; */
   }
 
   @media only screen and (min-width: 746px) {

@@ -1,6 +1,7 @@
 <template>
   <div class="header">
-    <h1>The Pamela Walsh Gallery</h1>
+    <!-- <h1>The Pamela Walsh Gallery</h1> -->
+    <img src="../assets/PWG-logo-horizontal.jpg">
   </div>
 </template>
 
@@ -28,6 +29,11 @@ export default {
   }
   a {
     color: #42b983;
+  }
+
+  img {
+    height: 100px;
+    padding-top: 40px;
   }
 
   @media only screen and (min-width: 746px) {
