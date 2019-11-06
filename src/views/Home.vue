@@ -50,12 +50,12 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    /* padding-top: 200px; */
     width: 85vw;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 60px;
-    margin-bottom: 200px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* margin-top: 60px; */
+    /* margin-bottom: 200px; */
   }
 
   @media only screen and (min-width: 746px) {
