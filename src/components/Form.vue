@@ -4,7 +4,11 @@
       <div class="form__body">
         <div class="form__question">
           <label class="form__label"></label>
-          <input class="form__input" name="entry.668016936" v-model="input.name" placeholder="Name" autocomplete="off"/>
+          <input class="form__input" name="entry.280659687" v-model="input.lastName" placeholder="Last Name" autocomplete="off"/>
+        </div>
+        <div class="form__question">
+          <label class="form__label"></label>
+          <input class="form__input" name="entry.668016936" v-model="input.firstName" placeholder="First Name" autocomplete="off"/>
         </div>
         <div class="form__question">
           <label class="form__label"></label>
@@ -27,7 +31,8 @@ export default {
   data() {
     return {
       input: {
-        name: '',
+        lastName: '',
+        firstName: '',
         address: '',
         email: '',
       }
@@ -36,7 +41,7 @@ export default {
   methods: {
     // refactor to ternary.
     submit() {
-      if(this.input.name === '' || this.input.address === '' || this.input.email === '') {
+      if(this.input.lastName === '' || this.input.lastName === '' || this.input.address === '' || this.input.email === '') {
         alert('You forgot something! Please fill out all fields.');
         event.preventDefault();
       }
