@@ -1,24 +1,25 @@
 <template>
   <div class="form">
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfA1sgQSFHpCWcXK6NMw0wS_oLOGqQeCFw3TaKp4xcgvtuGvQ/formResponse" target="_self" method="POST">
+    <form @submit.prevent="handleSubmit" >
       <div class="form__body">
         <div class="form__question">
           <label class="form__label"></label>
-          <input class="form__input" name="entry.280659687" v-model="input.lastName" placeholder="Last Name" autocomplete="off"/>
+          <input class="form__input" name="entry.280659687" v-model="contact.lastName" placeholder="Last Name" autocomplete="off"/>
         </div>
         <div class="form__question">
           <label class="form__label"></label>
-          <input class="form__input" name="entry.668016936" v-model="input.firstName" placeholder="First Name" autocomplete="off"/>
+          <input class="form__input" name="entry.668016936" v-model="contact.firstName" placeholder="First Name" autocomplete="off"/>
         </div>
         <div class="form__question">
           <label class="form__label"></label>
-          <input class="form__input" name="entry.1943360912" v-model="input.address" placeholder="Address" autocomplete="off"/>
+          <input class="form__input" name="entry.1943360912" v-model="contact.address" placeholder="Address" autocomplete="off"/>
         </div>
         <div class="form__question">
           <label class="form__label"></label>
-          <input class="form__input" name="entry.1338771678" v-model="input.email" placeholder="Email" autocomplete="off"/>
+          <input class="form__input" name="entry.1338771678" v-model="contact.email" placeholder="Email" autocomplete="off"/>
         </div>
-        <button v-on:click="submit()" class="form__submit-button">Submit</button>
+        <button class="form__submit-button">Submit</button>
+        <!-- <button v-on:click.prevent="submit()" class="form__submit-button">Submit</button> -->
       </div>
     </form>
   </div>
@@ -30,26 +31,37 @@ export default {
   name: 'Form',
   data() {
     return {
-      input: {
-        lastName: '',
-        firstName: '',
-        address: '',
-        email: '',
-      }
+      contact: Object.assign({}, this.contact)
     };
+    // return {
+    //   contact: {
+    //     lastName: '',
+    //     firstName: '',
+    //     address: '',
+    //     email: '',
+    //   }
+    // };
   },
   methods: {
+    handleSubmit() {
+      let contact = Object.assign({}, this.contact);
+      console.log('contact', contact);
+    },
     // refactor to ternary.
-    submit() {
-      if(this.input.lastName === '' || this.input.lastName === '' || this.input.address === '' || this.input.email === '') {
-        alert('You forgot something! Please fill out all fields.');
-        event.preventDefault();
-      }
-      // else this.$router.push({ path: 'thank-you' });
-      else return;
-    }
+
+    // submit() {
+    //   let contact = {};
+    //   if(this.contact.lastName === '' || this.contact.lastName === '' || this.contact.address === '' || this.contact.email === '') {
+    //     alert('You forgot something! Please fill out all fields.');
+    //     //preventDefault() removed since was added to onClick method in submit button
+    //     // event.preventDefault();
+    //   }
+    //   // else this.$router.push({ path: 'thank-you' });
+    //   else return;
+    // }
   },
 };
+
 </script>
 
 
